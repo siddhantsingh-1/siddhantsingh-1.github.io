@@ -2,8 +2,9 @@
 $base-color: #00d395;
 $secondary-color: #070a0e;
 $base-color-darker: #00b27e;
-$base-color-darkest: #1b5c49;
+$base-color-darkest: #164b3b;
 $base-color-lightest: #b2ffe9;
+$gradient: linear-gradient(180deg, $base-color, $base-color-darkest);
 
 $text-color-primary: #ffffff;
 $text-color-secondary: #aab8c1;
@@ -13,3 +14,11 @@ $text-black: $secondary-color;
 $light: 400;
 $medium: 500;
 $semi-bold: 600;
+
+$h1-font: 1.5rem;
+$h2-font: 1.25rem;
+$h3-font: 1rem;
+$normal-font: 0.938rem;
+$small-font: 0.813rem;
+$smaller-font: .75rem;
+$tiny-font: .625rem;

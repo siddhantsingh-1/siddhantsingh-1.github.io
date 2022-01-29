@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-@import "config", "header";
+@import "config", "header", "textanimation", "home";
 
 * {
     box-sizing: border-box;
@@ -10,6 +10,7 @@
 body {
     background-color: $secondary-color;
     font-family: 'Poppins', sans-serif;
+    color: $text-color-primary;
 }
 
 .container {
@@ -43,4 +44,48 @@ button {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+.section__title {
+    color: $text-color-primary;
+    margin-bottom: 2rem;
+}
+
+.section__subtitle {
+    display: block;
+    color: $text-color-secondary;
+}
+
+// Buttons
+.button {
+    display: inline-block;
+    background-color: $base-color;
+    color: $secondary-color;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: $medium;
+    transition: .4s;
+
+    &--ghost {
+        background: transparent;
+        border: 2px solid $base-color;
+        color: $base-color;
+    }
+
+    &:hover {
+        background-color: $base-color-darker;
+    }
 }

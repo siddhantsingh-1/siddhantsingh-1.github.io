@@ -82,6 +82,11 @@
   padding-top: 2rem;
 }
 
+.scroll-header {
+  -webkit-box-shadow: 0 4px 4px rgba(10, 10, 10, 0.3);
+          box-shadow: 0 4px 4px rgba(10, 10, 10, 0.3);
+}
+
 .home__data {
   text-align: center;
 }

@@ -4,6 +4,11 @@
     padding-top: 2rem;
 }
 
+// Changind background of header after scroll
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
+
 .home__data {
     text-align: center;
 }

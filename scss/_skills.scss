@@ -1,0 +1,51 @@
+.skills {
+    margin-bottom: 70vh;
+
+    &__container {
+        row-gap: 2rem;
+        padding-top: 1rem;
+    }
+    
+    &__content {
+        background-color: rgba(0, 66, 46, 0.419);
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+    }
+
+    &__title {
+        font-size: $normal-font;
+        font-weight: $medium;
+        color: $base-color;
+        text-align: center;
+        margin-bottom: 1.8rem;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        column-gap: 2.5rem;
+    }
+
+    &__group {
+        display: grid;
+        align-content: flex-start;
+        flex: 1;
+        row-gap: 2rem;
+    }
+
+    &__data {
+        display: flex;
+        column-gap: .5rem;
+    }
+
+    .bxs-badge-check {
+        font-size: 1rem;
+        color: $base-color;
+    }
+
+    &__name {
+        font-size: $normal-font;
+        font-weight: $medium;
+        line-height: 18px;
+    }
+}

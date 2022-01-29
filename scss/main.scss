@@ -1,91 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-@import "config", "header", "textanimation", "home";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "config", "header", "textanimation", "home", "about";
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: $secondary-color;
-    font-family: 'Poppins', sans-serif;
-    color: $text-color-primary;
+	background-color: $secondary-color;
+	font-family: "Poppins", sans-serif;
+	color: $text-color-primary;
 }
 
 .container {
-    max-width: 968px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+	max-width: 968px;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .grid {
-    display: grid;
+	display: grid;
 }
 
 .flex {
-    display: flex;
+	display: flex;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    outline: none;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .main {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .section {
-    padding: 4.5rem 0 1rem;
+	padding: 4.5rem 0 1rem;
 }
 
 .section__title,
 .section__subtitle {
-    text-align: center;
+	text-align: center;
 }
 
 .section__title {
-    color: $text-color-primary;
-    margin-bottom: 2rem;
+	color: $base-color;
+	margin-bottom: 2rem;
 }
 
 .section__subtitle {
-    display: block;
-    color: $text-color-secondary;
+	display: block;
+	color: $text-color-secondary;
 }
 
 // Buttons
 .button {
-    display: inline-block;
-    background-color: $base-color;
-    color: $secondary-color;
-    padding: .75rem 1rem;
-    border-radius: .5rem;
-    font-weight: $medium;
-    transition: .4s;
+	display: inline-block;
+	background-color: $base-color;
+	color: $secondary-color;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+	font-weight: $medium;
+	transition: 0.4s;
 
-    &--ghost {
-        background: transparent;
-        border: 2px solid $base-color;
-        color: $base-color;
-    }
+	&--ghost {
+		background: transparent;
+		border: 2px solid $base-color;
+		color: $base-color;
 
-    &:hover {
-        background-color: $base-color-darker;
-    }
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	&:hover {
+		background-color: $base-color-darker;
+	}
 }

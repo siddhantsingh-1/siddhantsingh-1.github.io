@@ -1,0 +1,58 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $secondary-color;
+	z-index: 100;
+
+	.nav {
+		height: 3.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__name {
+			color: $base-color;
+			font-weight: $medium;
+			transition: 0.4s;
+
+			&:hover {
+				color: $base-color-darker;
+			}
+		}
+
+		&__menu {
+			position: fixed;
+			bottom: 1rem;
+			background-color: rgba(0, 66, 46, 0.419);
+			width: 90%;
+			border-radius: 4rem;
+			padding: 1rem 2.25rem;
+			backdrop-filter: blur(10px);
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__link {
+			color: $white-darker;
+			font-size: 1.25rem;
+			padding: 0.4rem;
+			display: flex;
+			border-radius: 5rem;
+		}
+
+		.active-link {
+			background: linear-gradient(180deg, $base-color, rgba(0, 250, 175, 0.2));
+			box-shadow: 0 0 16px rgba(0, 250, 175, 0.4);
+		}
+	}
+
+	#theme-button {
+		color: $white-darker;
+	}
+}

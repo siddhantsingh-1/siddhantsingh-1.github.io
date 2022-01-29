@@ -86,10 +86,14 @@
   text-align: center;
 }
 
-.home__greeting,
-.home__designation {
+.home__greeting {
   font-size: 0.813rem;
   font-weight: 500;
+}
+
+.home__designation {
+  font-size: 0.938rem;
+  color: #ededed;
 }
 
 .home__greeting {
@@ -130,6 +134,7 @@
 .home__button {
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-top: -1.5rem;
 }
 
 .home__social {

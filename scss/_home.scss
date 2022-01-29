@@ -8,10 +8,14 @@
     text-align: center;
 }
 
-.home__greeting,
-.home__designation {
+.home__greeting {
     font-size: $small-font;
     font-weight: $medium;
+}
+
+.home__designation {
+    font-size: $normal-font;
+    color: $white-darker;
 }
 
 .home__greeting {
@@ -43,6 +47,7 @@
 
 .home__button {
     justify-self: center;
+    margin-top: -1.5rem;
 }
 
 .home__social {

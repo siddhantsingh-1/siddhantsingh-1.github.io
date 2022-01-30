@@ -601,4 +601,18 @@ img {
 .button:hover {
   background-color: #00b27e;
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #4f605b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #003c2a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00291d;
+}
 /*# sourceMappingURL=main.css.map */

@@ -103,3 +103,18 @@ img {
 		background-color: $base-color-darker;
 	}
 }
+
+// Scrollbar styles
+::-webkit-scrollbar {
+	width: 0.6rem;
+	border-radius: 0.5rem;
+	background-color: rgb(79, 96, 91);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 60, 42);
+
+	&:hover {
+		background-color: rgb(0, 41, 29);
+	}
+}

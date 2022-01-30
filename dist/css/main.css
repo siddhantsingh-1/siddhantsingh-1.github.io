@@ -361,7 +361,7 @@
 }
 
 .contact {
-  margin-bottom: 60vh;
+  margin-bottom: 2rem;
 }
 
 .contact__container {
@@ -384,14 +384,14 @@
 .contact__card {
   background-color: rgba(0, 66, 46, 0.419);
   padding: 1rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   text-align: center;
 }
 
 .contact__card-icon {
   font-size: 2rem;
   color: #ffffff;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact__card-title, .contact__card-data {
@@ -404,7 +404,7 @@
 
 .contact__card-data {
   display: block;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   color: #aab8c1;
 }
 
@@ -420,8 +420,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: .25rem;
-          column-gap: .25rem;
+  -webkit-column-gap: 0.25rem;
+          column-gap: 0.25rem;
 }
 
 .contact__button:hover .contact__button-icon {
@@ -431,8 +431,68 @@
 
 .contact__button-icon {
   font-size: 1rem;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer {
+  background-color: #00b27e;
+}
+
+.footer__container {
+  padding: 2.5rem 0 6rem;
+}
+
+.footer__title, .footer__link {
+  color: #070a0e;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+
+.footer__social-link {
+  background-color: #070a0e;
+  color: #00d395;
+  padding: .25rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 4.5rem;
+  color: #070a0e;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 :root {

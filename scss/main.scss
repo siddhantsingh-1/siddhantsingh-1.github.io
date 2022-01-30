@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import "config", "header", "textanimation", "home", "about", "skills";
+@import "config", "header", "textanimation", "home", "about", "skills", "projects";
+
+:root {
+	--swiper-theme-color: #00d395 !important;
+	--swiper-pagination-bullet-inactive-color: rgba(0, 66, 46, 0.419);
+	--swiper-pagination-bullet-inactive-opacity: 1;
+}
 
 * {
 	box-sizing: border-box;

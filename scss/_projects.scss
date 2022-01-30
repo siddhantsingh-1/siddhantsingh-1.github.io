@@ -1,0 +1,58 @@
+.projects {
+
+    &__container {
+        overflow: initial;
+        padding-bottom: 1.5rem !important;
+    }
+
+    &__content {
+        padding: 0 2.75rem;
+        gap: 1.5rem;
+    }
+
+    &__img {
+        width: 265px;
+        border-radius: .5rem;
+        justify-self: center;
+    }
+
+    &__title {
+        font-size: $h3-font;
+        margin-bottom: .5rem;
+    }
+
+    &__description {
+        //font-size: $normal-font;
+        margin-bottom: 1rem;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        transform: translateY(.2rem);
+        transition: .4s;
+    }
+
+    &__button:hover {
+        .projects__icon {
+            transform: translateX(.25rem) translateY(.2rem);
+        }
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
+}
+
+.swiper-projects-icon {
+    font-size: 2rem;
+    color: $base-color;
+}
+
+.swiper-pagination {
+    transform: translateY(1.1rem) !important;
+}
+
+#projects {
+    margin-bottom: 60vh;
+}

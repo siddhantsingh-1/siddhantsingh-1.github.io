@@ -358,6 +358,12 @@
   margin-bottom: 60vh;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
 :root {
   --swiper-theme-color: #00d395 !important;
   --swiper-pagination-bullet-inactive-color: rgba(0, 66, 46, 0.419);

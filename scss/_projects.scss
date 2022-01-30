@@ -56,3 +56,9 @@
 #projects {
     margin-bottom: 60vh;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next,
+.swiper-pagination-bullet {
+    outline: none;
+}

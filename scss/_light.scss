@@ -1,0 +1,129 @@
+.change-theme {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: $base-color !important;
+    }
+}
+
+// Variables for light theme
+body.light-theme {
+
+    $base-color-darkest: #006d4c;
+    background: #fff;
+    color: $text-black;
+
+    // Base Styles
+    .section__title {
+        color: $base-color-darker;
+    }
+    
+    .section__subtitle {
+        color: #6a6a6a;
+    }
+
+    // Header styles
+    .header {
+        background-color: #fff;
+
+        &.scroll-header {
+            box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+        }
+
+        .nav__menu {
+            background-color: rgba(0, 66, 46, 0.132);
+        }
+
+        .nav__link {
+            color: #4d4d4d;
+        }
+
+        .nav__name {
+            color: $base-color-darker;
+            &:hover {
+                color: $base-color-darkest;
+            }
+        }
+
+        #theme-button {
+            color: $base-color-darker;
+
+            &:hover {
+                color: $base-color-darkest !important;
+            }
+        }
+    }
+
+    // Home Styles
+    .home {
+        &__greeting,
+        &__designation {
+            color: #6a6a6a;
+        }
+
+        &__social:after {
+            background-color: $base-color-darkest;
+        }
+
+        &__scroll {
+            color: $base-color-darkest;
+        }
+
+        &__social-link {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 211, 148, 0.438);
+            color: $base-color-darkest;
+
+            &:hover {
+                background-color: $base-color-darker;
+                color: #fff;
+            }
+        }
+
+        &__handle {
+            background: linear-gradient($base-color, $base-color-lightest);
+        } 
+    }
+
+    // About section
+    .about {
+        &__description {
+            color: #6a6a6a;
+        }
+    }
+
+    // Skills section
+    .skills {
+        &__content {
+            background: #fff;
+            box-shadow: 0 2px 16px rgba(0, 73, 51, 0.283);
+        }
+
+        &__title {
+            color: $base-color-darker;
+        }
+    }
+
+    // Contact Section
+    .contact {
+        &__card {
+            background-color: #fff;
+            box-shadow: 0 2px 16px rgba(0, 73, 51, 0.283);
+
+            &-icon {
+                color: $text-black;
+            }
+
+            &-data {
+                color: #6a6a6a;
+            }
+        } 
+
+        &__button {
+            color: $base-color-darker;
+        }
+    }
+}
+

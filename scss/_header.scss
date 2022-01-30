@@ -5,6 +5,7 @@
 	width: 100%;
 	background-color: $secondary-color;
 	z-index: 100;
+	transition: .4s;
 
 	.nav {
 		height: 3.5rem;
@@ -30,6 +31,7 @@
 			border-radius: 4rem;
 			padding: 1rem 2.25rem;
 			backdrop-filter: blur(10px);
+			transition: .4s;
 		}
 
 		&__list {

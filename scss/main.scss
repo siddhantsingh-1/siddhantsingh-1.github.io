@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import "config", "header", "textanimation", "home", "about", "skills", "projects", "contact", "footer";
+@import "config", "header", "textanimation", "home", "about", "skills",
+	"projects", "contact", "footer", "light";
 
 :root {
 	--swiper-theme-color: #00d395 !important;
@@ -21,6 +22,7 @@ body {
 	background-color: $secondary-color;
 	font-family: "Poppins", sans-serif;
 	color: $text-color-primary;
+	transition: .4s; //for light mode animation
 }
 
 .container {
@@ -89,6 +91,10 @@ img {
 	font-weight: $medium;
 	transition: 0.4s;
 
+	&:hover {
+		background-color: $base-color-darker;
+	}
+
 	&--ghost {
 		background: transparent;
 		border: 2px solid $base-color;
@@ -96,11 +102,8 @@ img {
 
 		&:hover {
 			color: $secondary-color;
+			background-color: $base-color;
 		}
-	}
-
-	&:hover {
-		background-color: $base-color-darker;
 	}
 }
 
@@ -108,13 +111,26 @@ img {
 ::-webkit-scrollbar {
 	width: 0.6rem;
 	border-radius: 0.5rem;
-	background-color: rgb(79, 96, 91);
+	background-color: rgb(56, 70, 65);
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgb(0, 60, 42);
+	border-radius: 0.5rem;
 
 	&:hover {
 		background-color: rgb(0, 41, 29);
+	}
+}
+
+.light-theme::-webkit-scrollbar {
+	background-color: rgb(149, 187, 175);
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+	background-color: rgb(86, 131, 117);
+
+	&:hover {
+		background-color: rgb(76, 104, 95);
 	}
 }

@@ -1,0 +1,67 @@
+.contact {
+    margin-bottom: 60vh;
+
+    &__container {
+        row-gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: $h3-font;
+        margin-bottom: 1.5rem;
+    }
+
+    &__info {
+        display: grid;
+        gap: 1rem;
+    }
+
+    &__card {
+        background-color: rgba(0, 66, 46, 0.419);
+        padding: 1rem;
+        border-radius: .75rem;
+        text-align: center;
+
+        &-icon {
+            font-size: 2rem;
+            color: $text-color-primary;
+            margin-bottom: .25rem;
+        }
+
+        &-title,
+        &-data {
+            font-size: $small-font;
+        }
+
+        &-title {
+            font-weight: $medium;
+        }
+
+        &-data {
+            display: block;
+            margin-bottom: .75rem;
+            color: $text-color-secondary;
+        }
+    }
+    &__button {
+        color: $base-color;
+        font-size: $small-font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: .25rem;
+
+        &:hover {
+            .contact__button-icon {
+                transform: translateX(.25rem);
+            }
+        }
+
+        &-icon {
+            font-size: 1rem;
+            transition: .4s;
+        }
+    }
+    
+}

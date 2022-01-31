@@ -22,3 +22,36 @@ $normal-font: 0.938rem;
 $small-font: 0.813rem;
 $smaller-font: 0.75rem;
 $tiny-font: 0.625rem;
+
+@media screen and (min-width: 968px) {
+    $h1-font: 2.25rem;
+    $h2-font: 1.5rem;
+    $h3-font: 1.25rem;
+    $normal-font: 1rem;
+    $small-font: .875rem;
+    $smaller-font: .813rem;
+}
+
+@mixin media-sm{
+    @media screen and (max-width: 337px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}

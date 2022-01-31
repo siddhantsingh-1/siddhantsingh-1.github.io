@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import "config", "header", "textanimation", "home", "about", "skills",
-	"projects", "contact", "footer", "light";
+@import "config";
 
 :root {
 	--swiper-theme-color: #00d395 !important;
@@ -22,7 +21,7 @@ body {
 	background-color: $secondary-color;
 	font-family: "Poppins", sans-serif;
 	color: $text-color-primary;
-	transition: .4s; //for light mode animation
+	transition: 0.4s; //for light mode animation
 }
 
 .container {
@@ -134,3 +133,7 @@ img {
 		background-color: rgb(76, 104, 95);
 	}
 }
+
+// Importing all the partials
+@import "header", "textanimation", "home", "about", "skills", "projects",
+	"contact", "footer", "light", "responsive";

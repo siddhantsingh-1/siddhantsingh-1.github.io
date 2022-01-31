@@ -49,3 +49,6 @@ sr.reveal('.home__data, .home__button');
 sr.reveal('.home__handle', {delay: 700});
 sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'});
 sr.reveal('.about');
+
+// Smooth Scroll Browser Compatible
+let scroll = new SmoothScroll('a[href*="#"]');
